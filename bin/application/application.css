@@ -1,0 +1,46 @@
+.table-view .scroll-bar * {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+.table-view .column-header .label {
+	
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+	-fx-background-color :  #00BFFF ;
+}
+.button{
+	-fx-cursor: hand;
+	-fx-background-radius : 100 ;
+	-fx-font-weight:bold;
+	-fx-text-fill :  white;
+}
+.btn{
+	-fx-background-color :  #00BFFF ;
+
+	-fx-effect: dropshadow( three-pass-box, #00BFFF, 13.89, 0.0, 0.0, 0.0); 
+}
+
+.exit{
+	-fx-background-color :  red ;
+	-fx-effect: dropshadow( three-pass-box,red, 13.89, 0.0, 0.0, 0.0); 
+
+}
+
+
+.success{
+	-fx-background-color :  rgb(82,216,10) ;
+	-fx-effect: dropshadow( three-pass-box,rgb(82,216,10), 13.89, 0.0, 0.0, 0.0); 
+
+}
+
+

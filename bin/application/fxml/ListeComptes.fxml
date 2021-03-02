@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.BottomNavigation?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="838.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.ListeComptesController">
+   <children>
+      <Circle fill="DEEPSKYBLUE" layoutX="733.0" layoutY="582.0" radius="115.0" stroke="DEEPSKYBLUE" strokeType="INSIDE" />
+      <Circle fill="DEEPSKYBLUE" layoutX="764.0" layoutY="480.0" radius="115.0" stroke="DEEPSKYBLUE" strokeType="INSIDE" />
+      <Circle fill="DEEPSKYBLUE" layoutX="860.0" layoutY="448.0" radius="115.0" stroke="DEEPSKYBLUE" strokeType="INSIDE" />
+      <TableView fx:id="table" layoutX="53.0" layoutY="134.0" onMouseClicked="#afficheCompte" prefHeight="123.0" prefWidth="734.0" stylesheets="file:/C:/Users/21658/eclipse-workspace/JavaAppDesktop/src/application/application.css">
+        <columns>
+            <TableColumn fx:id="typeCol" prefWidth="183.5" resizable="false" text="Compte" />
+          <TableColumn fx:id="ribCol" prefWidth="183.5" resizable="false" text="Rib" />
+          <TableColumn fx:id="soldeCol" prefWidth="183.5" resizable="false" text="Solde" />
+            <TableColumn fx:id="dateCol" prefWidth="183.5" resizable="false" text="Date de création" />
+        </columns>
+      </TableView>
+      <Button layoutX="53.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#addAccount" styleClass="btn" stylesheets="file:/C:/Users/21658/eclipse-workspace/JavaAppDesktop/src/application/application.css" text="Ajouter" />
+      <BottomNavigation layoutX="107.0" layoutY="487.0" />
+      <Circle fill="DEEPSKYBLUE" layoutX="599.0" layoutY="365.0" radius="19.0" stroke="DEEPSKYBLUE" strokeType="INSIDE" />
+      <Circle fill="DEEPSKYBLUE" layoutX="655.0" layoutY="375.0" radius="11.0" stroke="DEEPSKYBLUE" strokeType="INSIDE" />
+      <Label layoutX="48.0" layoutY="32.0" prefHeight="33.0" prefWidth="350.0" style="-fx-font-size: 27; -fx-font-weight: bold;" text="Gestionnaire des comptes :" />
+      <Button id="deconnexion" fx:id="deconnexion" layoutX="735.0" layoutY="36.0" mnemonicParsing="false" onAction="#LogOut" styleClass="exit" stylesheets="file:/C:/Users/21658/eclipse-workspace/JavaAppDesktop/src/application/application.css" text="Quitter" />
+      <Label fx:id="nomText" layoutX="398.0" layoutY="40.0" prefHeight="18.0" prefWidth="230.0" style="-fx-font-weight: bold; -fx-font-size: 18; -fx-text-alignment: center;" text="Label" textAlignment="CENTER" />
+      <Label layoutX="570.0" layoutY="104.0" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Agence :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Text fx:id="agenceText" layoutX="652.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16;" text="Text" wrappingWidth="109.0000071823597" />
+      <Label fx:id="salaireLabel" layoutX="283.0" layoutY="104.0" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Salaire :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Text fx:id="salaireText" layoutX="356.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16;" text="Text" wrappingWidth="125.000000346452" />
+      <Label fx:id="nomEntrepriseLabel" layoutX="52.0" layoutY="364.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Nom de l'entreprise :" />
+      <Text fx:id="nomEntrepriseText" layoutX="268.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Text" wrappingWidth="170.00000585243106" />
+      <Label fx:id="chiffreAffaireLabel" layoutX="52.0" layoutY="396.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Chiffre d'affaire :" />
+      <Text fx:id="chiffreAffaireText" layoutX="268.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Text" wrappingWidth="109.00000585243106" />
+      <Label fx:id="nbEmployesLabel" layoutX="52.0" layoutY="430.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Nombre d'employés :" />
+      <Text fx:id="nbEmployesText" layoutX="268.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Text" wrappingWidth="71.00000585243106" />
+   </children>
+</AnchorPane>

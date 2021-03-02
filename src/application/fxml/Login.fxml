@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="loginPane" maxHeight="531.0" maxWidth="718.0" minHeight="531.0" minWidth="718.0" prefHeight="531.0" prefWidth="718.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.LoginController">
+   <right>
+      <AnchorPane prefHeight="531.0" prefWidth="368.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="connexion" layoutX="254.0" layoutY="345.0" mnemonicParsing="false" onAction="#Authentification" prefHeight="19.0" prefWidth="88.0" style="-fx-background-color: #00BFFF; -fx-text-fill: white; -fx-background-radius: 100;" text="Connexion">
+               <effect>
+                  <DropShadow color="#00b7ff" height="24.11" radius="13.11" width="30.33" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label layoutX="26.0" layoutY="149.0" prefHeight="38.0" prefWidth="64.0" text="Login" />
+            <TextField fx:id="login" layoutX="26.0" layoutY="187.0" prefHeight="26.0" prefWidth="316.0" promptText="Saisir votre cin" style="-fx-border-style: hidden hidden solid hidden; -fx-border-color: #00BFFF; -fx-border-width: 2;" />
+            <Label layoutX="26.0" layoutY="229.0" prefHeight="37.0" prefWidth="107.0" text="Mot de passe" />
+            <PasswordField fx:id="password" layoutX="26.0" layoutY="275.0" prefHeight="26.0" prefWidth="316.0" promptText="Saisir votre mot de passe" style="-fx-border-style: hidden hidden solid hidden; -fx-border-color: #00BFFF; -fx-border-width: 2;" />
+            <Label layoutX="22.0" layoutY="110.0" text="Connexion">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="531.0" prefWidth="346.0" style="-fx-background-color: #00BFFF; -fx-background-radius: 0 40 40 0; -fx-border-radius: 0 40 40 0;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="29.0" layoutY="137.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30; -fx-font-weight: bold; -fx-fill: white;" text="Application Bancaire" wrappingWidth="293.6708984375" />
+            <Text fill="WHITE" layoutX="14.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By Mohamed Ben Chamakh" />
+            <Text fill="WHITE" layoutX="14.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mohamed.ben.chamakh98@gmail.com" />
+            <ImageView fitHeight="78.0" fitWidth="79.0" layoutX="136.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/21658/eclipse-workspace/JavaAppDesktop/src/application/images/Logo.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </center>
+</BorderPane>
